@@ -1,0 +1,80 @@
+*{
+	margin: 0;
+
+}
+
+div{
+	position: relative;
+}
+
+.fon{
+	
+	width: 100%;
+	margin: 15% 0;
+
+
+}
+
+.wings{
+	position: absolute;
+	top: 41%;
+	left: 22.4%;
+	-webkit-animation:mymoove1 2s infinite linear ;
+	-o-animation: mymoove1 2s infinite linear;
+	animation: mymoove1 2s infinite linear;
+
+}
+
+@-webkit-keyframes mymoove1 {
+	100%{
+		transform: rotate(360deg);
+	}
+}
+@-o-keyframes mymoove1 {
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+@-moz-keyframes mymoove1 {
+	100%{
+		transform: rotate(360deg);
+	}
+}
+	
+@keyframes mymoove1 {
+	100%{
+		transform: rotate(360deg);
+	}
+	
+}
+
+.ship{
+	position: absolute;
+	top: 30%;
+	right: -10%;
+	width: 150px;
+	height: auto;
+	-webkit-animation:mymoove2 12s infinite  linear ;
+	-o-animation:mymoove2 12s infinite  linear ;
+	animation:mymoove2 12s infinite  linear ;
+}
+
+@-webkit-keyframes mymoove2 {
+	0%{ right: -10% }
+	 30% { top: 45% }
+	 49% {right: 110%;
+			transform:scaleX(1)
+	 }
+	 50%  {right: 110%;
+	 		transform:scaleX(-1)
+	 	}
+
+	 99% {
+	 	right: -10%;
+	 	transform:scaleX(-1)
+	 }
+
+	 100% {right: -10%;
+	 		transform:scaleX(1)}
+}
